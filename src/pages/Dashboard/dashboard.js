@@ -9,6 +9,7 @@ const Dashboard = () => {
       <Sidebar />
       <div className="container">
         <Navbar />
+        <h1>Dashboard</h1>
       </div>
     </div>
   );
