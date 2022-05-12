@@ -1,0 +1,8 @@
+.teamlist {
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  flex: 6;
+}
