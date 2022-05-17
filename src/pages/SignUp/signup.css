@@ -1,11 +1,11 @@
-.Login {
+.SignUp {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
 }
-
-.login{
+  
+.signup {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
@@ -20,11 +20,12 @@
         -ms-flex-pack: center;
             justify-content: center;
 }
-.login h1{
+  
+.signup h1 {
     color: orange;
 }
-
-.login input{
+  
+.signup input {
     width: 100%;
     margin: 10px 0;
     padding: 5px 15px;
@@ -33,12 +34,13 @@
     border-radius: 5px;
     color: #8A8A8A;
 }
-.login input :focus{
-        border: 2px solid orange;
-        outline: none !important;
+  
+.signup input :focus{
+    border: 2px solid orange;
+    outline: none !important;
 }
-
-.login-submit {
+  
+.signup-submit {
     width: 100%;
     padding: 10px 0;
     text-align: center;
@@ -51,7 +53,7 @@
     color: white;
 }
   
-.login-active {
+.signup-active {
     width: 100%;
     padding: 10px 0;
     text-align: center;
@@ -63,4 +65,3 @@
     font-weight: 600;
     color: white;
 }
-  

@@ -2,3 +2,15 @@
   --clr-grey: hsl(209, 61%, 16%);
   --clr-white: #fff;
 }
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+} 

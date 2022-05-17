@@ -5,6 +5,8 @@ import Product from "./pages/Products/products";
 import Team from "./pages/Team Members/team";
 import Client from "./pages/Client Members/client";
 import Dashboard from "./pages/Dashboard/dashboard";
+import Login from "./pages/Login/Login";
+import SignUp from "./pages/SignUp/SignUp";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/clients" element={<Client />} />
           <Route path="/products" element={<Product />} />
           <Route path="/produts/:id" element={<Update />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     </div>
