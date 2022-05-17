@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+import Navbar from '../Login/Navforauth';
 import './signup.css'
 
 function SignUp() {
@@ -47,9 +48,10 @@ form.phonenumber ])
 
 
   return (
+    <div> <Navbar/>
     <div className='signup'>
       <div>
-        <h1>Sign Up</h1>
+        <h1>SIGN UP</h1>
 
         <form onSubmit={SignupHandler}>
         <input type="text" required placeholder=" Name" name="name" onChange={handleChange} />
@@ -70,6 +72,7 @@ form.phonenumber ])
 
       </div>
 
+    </div>
     </div>
   )
 }

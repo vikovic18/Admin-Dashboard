@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import './login.css'
+import Navbar from './Navforauth';
 
 function Login() {
 
@@ -37,9 +38,11 @@ function Login() {
 
 
   return (
+    <div> <Navbar />
     <div className='login'>
       <div>
-        <h1>Log In</h1>
+        <h1>WELCOME BACK!</h1>
+        <h3>LOGIN HERE</h3>
 
         <form onSubmit={loginHandler}>
         <input type="text" required placeholder=" Username" name="username" onChange={handleChange} />
@@ -56,6 +59,7 @@ function Login() {
 
       </div>
 
+    </div>
     </div>
   )
 }
