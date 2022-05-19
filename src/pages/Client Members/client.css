@@ -6,3 +6,47 @@
 .container {
   flex: 6;
 }
+
+.table {
+  margin: 3rem 6rem;
+  padding: 2rem;
+}
+
+.tex {
+  text-align: center;
+  color: seagreen;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+
+.tex:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.imgs {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Table {
+    width: 170%;
+    margin-top: 2rem;
+  }
+  .tex {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+  }
+}

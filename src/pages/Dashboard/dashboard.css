@@ -5,10 +5,21 @@
 .container {
   background-color: #ffff;
   flex: 6;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
 }
 
 h1 {
-  padding-left: 20px;
+  padding: 20px;
+}
+
+h3 {
+  padding-top: 15px;
+}
+
+.team {
+  display: flex;
 }
 
 @media screen and (max-width: 1200px) {

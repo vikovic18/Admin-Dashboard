@@ -18,7 +18,9 @@
   height: 97%;
   width: 97%;
   overflow: hidden;
+  overflow-y: scroll;
   grid-template-columns: auto auto none;
+  gap: 10px;
 }
 
 @media screen and (max-width: 1200px) {

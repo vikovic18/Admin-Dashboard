@@ -28,7 +28,7 @@ function Login() {
   const loginHandler = (e) => {
     e.preventDefault();
     sessionStorage.setItem("userDetails", JSON.stringify({ ...form }));
-    window.location = "/login";
+    window.location = "/";
   };
 
   return (

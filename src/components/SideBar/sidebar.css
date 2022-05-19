@@ -1,8 +1,9 @@
 .Sidebar {
   color: #ffff;
+  overflow-y: hidden;
   flex: 1;
   border-right: 0.5px solid rgb(230, 227, 227);
-  min-height: 100vh;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -17,10 +18,12 @@
 .logo {
   font-size: 20px;
   font-weight: bold;
+  position: fixed;
 }
 
 .center {
   padding-left: 10px;
+  position: fixed;
 }
 
 .icon {

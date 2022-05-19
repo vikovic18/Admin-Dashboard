@@ -69,18 +69,10 @@ const Sidebar = () => {
             </li>
             <li>
               <div className="icon">
-                <UilClipboardAlt />
-              </div>
-              <Link to="/team" style={linkStyle}>
-                <span>Team Members</span>
-              </Link>
-            </li>
-            <li>
-              <div className="icon">
                 <UilUsersAlt />
               </div>
               <Link to="/clients" style={linkStyle}>
-                <span>Client Members</span>
+                <span className="side">Client</span>
               </Link>
             </li>
           </ul>
