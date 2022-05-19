@@ -1,15 +1,20 @@
 import React from "react";
-import Navbar from "../../components/Navbar/navbar";
 import Sidebar from "../../components/SideBar/sidebar";
+import Cards from "../../components/Cards/cards";
+import Team from "../../components/Team Members/team";
+
 import "./dashboard.css";
 
 const Dashboard = () => {
+  let userDetails = JSON.parse(sessionStorage.getItem("userDetails"));
   return (
     <div className="home">
       <Sidebar />
       <div className="container">
-        <Navbar />
-        <h1>Dashboard</h1>
+        <h1>Hi {userDetails.username}</h1>
+        <Cards />
+        <h3>Team</h3>
+        <Team />
       </div>
     </div>
   );

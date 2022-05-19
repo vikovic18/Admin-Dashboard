@@ -5,4 +5,32 @@
 .container {
   background-color: #ffff;
   flex: 6;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+h3 {
+  padding-top: 15px;
+}
+
+.team {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    align-items: center;
+  }
 }

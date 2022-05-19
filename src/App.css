@@ -2,3 +2,39 @@
   --clr-grey: hsl(209, 61%, 16%);
   --clr-white: #fff;
 }
+
+.App {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.Appmenu {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  overflow: hidden;
+  overflow-y: scroll;
+  grid-template-columns: auto auto none;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Appmenu {
+    grid-template-columns: 10% 50% none;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Appmenu {
+    grid-template-columns: 1fr;
+  }
+  .Appmenu::-webkit-scrollbar {
+    display: none;
+  }
+}
