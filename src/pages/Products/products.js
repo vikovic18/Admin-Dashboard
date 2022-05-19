@@ -9,7 +9,7 @@ const Products = () => {
       <Sidebar />;
       <div className="container">
         <Navbar />
-        <div>BUILD YOUR COMPONENTS STARTING FROM THIS PRODUCTS DIV</div>
+        <h1>BUILD YOUR COMPONENTS STARTING FROM THIS PRODUCTS DIV</h1>
       </div>
     </div>
   );

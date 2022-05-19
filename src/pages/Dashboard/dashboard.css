@@ -6,3 +6,20 @@
   background-color: #ffff;
   flex: 6;
 }
+
+h1 {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    align-items: center;
+  }
+}

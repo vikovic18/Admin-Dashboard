@@ -1,9 +1,10 @@
 .Sidebar {
-  background-color: #000;
   color: #ffff;
   flex: 1;
   border-right: 0.5px solid rgb(230, 227, 227);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .top {
@@ -22,6 +23,10 @@
   padding-left: 10px;
 }
 
+.icon {
+  padding-right: 2rem;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -38,7 +43,7 @@ ul {
 ul li {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
   cursor: pointer;
 }
 
@@ -48,4 +53,45 @@ li:hover {
 
 .bottom {
   padding-left: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.bars {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .side {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sidebar {
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    width: 55%;
+    height: 100%;
+    padding-right: 1rem;
+  }
+  .side {
+    display: block;
+  }
+  .logo {
+    display: flex;
+  }
+  .bars {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    z-index: 9;
+    background: orange;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
