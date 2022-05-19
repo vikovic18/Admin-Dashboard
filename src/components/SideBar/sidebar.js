@@ -18,7 +18,7 @@ const Sidebar = () => {
     color: "white",
   };
 
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const sidebarVariants = {
     true: {
       left: "0",
@@ -55,7 +55,9 @@ const Sidebar = () => {
                 <UilEstate />
               </div>
               <Link to="/" style={linkStyle}>
-                <span className="side">Dashboard</span>
+                <span onClick={() => setExpanded(!expanded)} className="side">
+                  Dashboard
+                </span>
               </Link>
             </li>
             <p className="title">LISTS</p>
@@ -64,7 +66,9 @@ const Sidebar = () => {
                 <UilPackage />
               </div>
               <Link to="/products" style={linkStyle}>
-                <span className="side">Products</span>
+                <span onClick={() => setExpanded(!expanded)} className="side">
+                  Products
+                </span>
               </Link>
             </li>
             <li>
@@ -72,7 +76,9 @@ const Sidebar = () => {
                 <UilUsersAlt />
               </div>
               <Link to="/clients" style={linkStyle}>
-                <span className="side">Client</span>
+                <span onClick={() => setExpanded(!expanded)} className="side">
+                  Client
+                </span>
               </Link>
             </li>
           </ul>
@@ -84,7 +90,9 @@ const Sidebar = () => {
               <div className="icon">
                 <UilSignOutAlt />
               </div>
-              <span className="side">Logout</span>
+              <Link to="/login" style={linkStyle}>
+                <span className="side">Logout</span>
+              </Link>
             </li>
           </ul>
         </div>
